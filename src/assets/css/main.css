@@ -1,0 +1,405 @@
+@font-face {
+  font-family: "tt_chocolates";
+  src: url("../font/tt_chocolates_light-webfont.woff2") format("woff2"),
+    url("../font/tt_chocolates_light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tt_chocolates";
+  src: url("../font/tt_chocolates_regular-webfont.woff2") format("woff2"),
+    url("../font/tt_chocolates_regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tt_chocolates";
+  src: url("../font/tt_chocolates_medium-webfont.woff2") format("woff2"),
+    url("../font/tt_chocolates_medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tt_chocolates";
+  src: url("../font/tt_chocolates_demibold-webfont.woff2") format("woff2"),
+    url("../font/tt_chocolates_demibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tt_chocolates";
+  src: url("../font/tt_chocolates_bold-webfont.woff2") format("woff2"),
+    url("../font/tt_chocolates_bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tt_chocolates";
+  src: url("../font/tt_chocolates_extrabold-webfont.woff2") format("woff2"),
+    url("../font/tt_chocolates_extrabold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../font/CaveatFont/Caveat-Regular.woff2") format("woff2"),
+    url("../font/CaveatFont/Caveat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../font/CaveatFont/Caveat-Medium.woff2") format("woff2"),
+    url("../font/CaveatFont/Caveat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../font/CaveatFont/Caveat-Bold.woff2") format("woff2"),
+    url("../font/CaveatFont/Caveat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../font/CaveatFont/Caveat-SemiBold.woff2") format("woff2"),
+    url("../font/CaveatFont/Caveat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "tt_chocolates";
+}
+
+.main-font {
+  font-family: "tt_chocolates";
+}
+
+.font-Caveat {
+  font-family: "Caveat";
+}
+
+input:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mycontainer {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.focus-none:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.map-type-card {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.scroll-x-hidden::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scroll-y-hidden::-webkit-scrollbar {
+  height: 0px;
+}
+
+.sliders .slick-dots {
+  display: block;
+  width: max-content;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 15px;
+}
+
+.sliders .slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.sliders .slick-dots li {
+  width: 10px;
+  height: 10px;
+}
+
+.sliders .slick-dots li button:before {
+  font-size: 10px;
+}
+
+.landing-page-tab-card .slick-dots {
+  width: fit-content;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.landing-page-tab-card .slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+}
+
+.landing-page-tab-card .slick-dots li button:before {
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  color: #38383d;
+  opacity: 1;
+}
+
+.landing-page-tab-card .slick-dots li button {
+  width: 10px;
+  height: 10px;
+}
+
+.landing-page-tab-card .slick-dots li.slick-active button:before {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.Events-Slider .slick-dots {
+  bottom: -60px;
+  display: flex !important;
+  width: 100%;
+  height: max-content;
+  overflow-x: auto;
+  padding-bottom: 8px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #414141;
+    border-radius: 99999px;
+  }
+}
+
+.Events-Slider .slick-dots li {
+  width: max-content;
+  height: max-content;
+}
+
+.Events-Slider .slick-dots li button {
+  padding: 24px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+  background-color: #414141;
+  width: max-content;
+  height: auto;
+  color: #ffffff;
+}
+
+.Events-Slider .slick-dots li.slick-active button {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.Events-Slider .slick-dots li button::before {
+  content: none;
+}
+
+.Events-Slider .slick-slide img {
+  filter: brightness(0.6);
+}
+
+.Events-Slider .slick-slide.slick-current img {
+  filter: brightness(1);
+}
+
+.sidebarlist {
+  height: calc(100dvh - 170px);
+  overflow: auto;
+}
+
+label.quick-filter-label {
+  width: 100%;
+  display: block;
+  background-color: #f7f7f7;
+  border: 1px solid #d5d5d5;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 16px 16px 16px 40px;
+}
+
+.quick-filter-input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+
+  &:checked+label.quick-filter-label {
+    background-color: #000;
+    color: #ffffff;
+  }
+}
+
+.inbox-h {
+  height: calc(100dvh - 128px);
+}
+
+
+.chat-h {
+  height: calc(100dvh - 258px);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input[type="number"].no-arrows::-webkit-outer-spin-button,
+input[type="number"].no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"].no-arrows {
+  -moz-appearance: textfield;
+}
+
+.clip-message {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 90%, 100% 100%, 90% 90%, 0 90%);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #D9D9D9;
+  border-radius: 999px;
+}
+
+.privacy-bg {
+  background-image: url(../img/privacyPopUpBg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100% 100%;
+}
+
+.data-progress-bullet {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: #BDBDBD;
+  position: relative;
+}
+
+.data-progress-bullet::after {
+  content: "";
+  position: absolute;
+  text-wrap: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  color: #BDBDBD;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.data-progress-bullet.bullet-one::after {
+  content: "Data request received";
+}
+
+.data-progress-bullet.bullet-two::after {
+  content: "Preparing your file";
+}
+
+.data-progress-bullet.bullet-three::after {
+  content: "Ready to downloand";
+}
+
+.data-progress-bullet.active::after {
+  color: #000000;
+}
+
+.data-progress-bullet.active {
+  background-color: #000000;
+}
+
+.data-progress-bullet.active::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width:768px) {
+  .data-progress-bullet::after {
+    content: none;
+  }
+
+  .data-progress-bullet.bullet-one::after {
+    content: none;
+  }
+
+  .data-progress-bullet.bullet-two::after {
+    content: none;
+  }
+
+  .data-progress-bullet.bullet-three::after {
+    content: none;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .fc .fc-toolbar {
+    flex-direction: column;
+  }
+}
